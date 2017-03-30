@@ -1,0 +1,46 @@
+@font-face{ 
+	font-family: 'neris';
+	src: url('Neris-Light-webfont.woff') format('woff');
+
+}
+html {
+   width : 100%;
+  height : 100%;
+  
+}
+body {
+  font-size: 2em;
+ height: 100%;
+background-image: url(../img/neige.jpg);
+}
+h1 {
+  font-family:  'neris', Arial, sans-serif; 
+  color : white;
+  font-size: 3em;
+}
+#meteo {
+  width : 100%;
+  margin-top: 20px;
+
+  background-color: black;
+  border-radius: 10px;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+#meteo ul {
+  margin : 0;
+  padding : 0;
+  color :white;
+  list-style-type: none;
+}
+.champs {
+  height : 50px;
+  border-radius: 10px;
+  margin-top: 24vh; /* poussé de la moitié de hauteur de viewport */
+  transform: translateY(-50%); /* tiré de la moitié de sa propre hauteur */
+}
+#search {
+}
+#deezer {
+  height : 350px;
+}

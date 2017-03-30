@@ -1,0 +1,24 @@
+<div class="row">
+  <div class="col-sm-offset-3 col-sm-6">
+    <form novalidate>
+      <input type="hidden" class="form-control" ng-model="$ctrl.recipe.id" />
+      <div class="form-group">
+        <label for="name">Nom du plat</label>
+        <input type="text" class="form-control" id="name" ng-model="$ctrl.recipe.name" />
+      </div>
+      <div class="form-group">
+        <label for="type">Type</label>
+        <input type="text" class="form-control" id="type" ng-model="$ctrl.recipe.type" />
+      </div>
+      <img ng-src="{{$ctrl.recipe.image}}" />
+      <div class="form-group">
+        <label for="image">Url de l'image</label>
+        <input type="text" class="form-control" id="image" ng-model="$ctrl.recipe.image" />
+      </div>
+      <div class="item-actions">
+        <input class="btn btn-success" type="submit" ng-click="$ctrl.save($ctrl.recipe)" value="Valider" />
+        <a class="btn btn-default" ui-sref="list">Annuler</a>
+      </div>
+    </form>
+  </div>
+</div>

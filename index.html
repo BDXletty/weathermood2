@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr" ng-app="weatherMoodApp">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Weathermood App</title>
+  <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/app.css">
+  <script src="vendors/angular/angular.js"></script>
+</head>
+
+<body ng-controller="myCtrl">
+  <div class="container-fluid text-center">
+    <header>
+      <div class="row">
+        <div class="col-lg-offset-3 col-lg-6">
+          <h1>Weathermood</h1>
+        </div>
+
+        <div class="col-lg-offset-1 col-lg-2">
+          <!--view show meteo-->
+          <div id="meteo" ng-if ="cityInfos">
+            <ul>
+              <li>{{cityInfos.name}} </li>
+              <li>{{cityInfos.temp}}</li>
+              <li>{{cityInfos.description}}</li>
+            </ul>
+          </div>
+          <!--fin view show meteo-->
+        </div>
+      </div>
+    </header>
+
+    <!--view weather search-->
+    <section id="search">
+      <div class="row">
+        <div class="col-lg-offset-3 col-lg-6">
+          <form>
+            <div class="form-group">
+              <input type="text" class="form-control champs" placeholder="Search" ng-model="town">
+            </div>
+            <button type="submit" class="btn btn-default" ng-click="getByTown()">Let's go</button>
+          </form>
+        </div>
+      </div>
+
+    </section>
+    <!--fin view weather search-->
+
+
+
+    <!--view deezer-->
+    <section id="deezer">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="deezer-widget-player" data-src="http://www.deezer.com/plugins/player?format=classic&autoplay=true&playlist=false&width=300&height=200&color=007FEB&layout=&size=medium&type=playlist&id=" + {{playlistId}} + "&app_id=1"
+            data-scrolling="no" data-frameborder="0" data-allowTransparency="true" data-width="300" data-height="60"></div>
+      </div>
+  </div>
+  </section>
+  <!--fin view deezer-->
+
+  <!--view list bonus
+    <section id="meteo" ng-if="$ctrl..... > 0">
+      <div class="row">
+        <div class="col-lg-12">
+
+        </div>
+      </div>
+    </section>
+    fin view list bonus-->
+
+  </div>
+  <!--FIN CONTAINER-->
+
+
+  <script src="js/player.js"></script>
+  <script src="js/weatherMood.js"></script>
+  <!--<script src="js/services.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/list.component.js"></script>
+  <script src="js/weather.component.js"></script>
+  <script src="js/deezer.component.js"></script>-->
+
+</body>
+
+</html>
