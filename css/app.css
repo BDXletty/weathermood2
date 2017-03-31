@@ -9,9 +9,16 @@ html {
   
 }
 body {
+  margin : 0 auto;
   font-size: 2em;
  height: 100%;
-background-image: url(../img/neige.jpg);
+ background-color: black;
+background-image: url(../img/black-scales.png);
+
+
+}
+header {
+  height: 350px;
 }
 h1 {
   font-family:  'neris', Arial, sans-serif; 
@@ -32,15 +39,63 @@ h1 {
   padding : 0;
   color :white;
   list-style-type: none;
+  font-family:  'neris', Arial, sans-serif; 
 }
-.champs {
+
+
+#deezer{
+  margin-top: 50px;
+padding: 0;
+
+  /*display: none;*/
+}
+/*--------------------------------------------------------------------------------*/
+ .temp {
+   font-size: 2em;
+   font-weight: bold;
+ }
+ .ville {
+  font-size: 1.8em;
+   text-transform: uppercase;
+ }
+ .description {
+   background-color: white;
+   color : black;
+    font-size: 1.2em;
+   font-weight: bold;
+   text-transform: capitalize;
+ }
+/* search box class="icon"><i class="fa fa-search"></i>*/
+
+.search {
+  width: 300px;
+height : 50px;
+padding-left: 10px;
+ background:rgba(203, 204, 201, 0.7);
+ border: none;
+ border-radius : 10px;
+ outline: none;
+}
+
+.bouton { color : grey;
+  position: relative;
+  width:50px;
   height : 50px;
-  border-radius: 10px;
-  margin-top: 24vh; /* poussé de la moitié de hauteur de viewport */
-  transform: translateY(-50%); /* tiré de la moitié de sa propre hauteur */
+  left:-15px;
+border: none; 
+  -webkit-border-top-right-radius: 10px;
+  -webkit-border-bottom-right-radius: 10px;
+  -moz-border-radius-topright: 10px;
+  -moz-border-radius-bottomright: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color:#82ef0e;
+  color:#fafafa;
 }
-#search {
+
+.bouton:hover  {border: none;
+                background-color:#fafafa;
+                color:#8af70e;
 }
-#deezer {
-  height : 350px;
-}
+ .bouton:hover, .bouton:active, .bouton:focus {outline: none;}
+
